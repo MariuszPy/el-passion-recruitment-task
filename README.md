@@ -1,9 +1,8 @@
 # EL Passion recruitment task
 
 <h1>Usage</h1>
- To see working app clone this project and double click ELPassion icon in ... folder.
+ 1. To see working app clone this project and double click ELPassion icon in 'EL-Passion-darwin-x64' folder.
  
- To check code and run in debug mode:
- 1. clone project
- 2. run <pre>npm install</pre>
- 3. run <pre>npm run go</pre>
+ 2. To check code and run in debug mode:
+<pre>npm install</pre>
+<pre>run <pre>npm run go</pre>
