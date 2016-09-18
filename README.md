@@ -1,5 +1,8 @@
-<<<<<<< HEAD
 # EL Passion recruitment task
-=======
-# el-passion-recruitment-task
->>>>>>> 9cac509a62bc46ef988d8314fffae123bcb246cc
+
+<h1>Usage</h1>
+ To check only working desktop app on MacOS just run ELPassion icon in ... folder.
+ 
+ To check code and run in debug mode:
+ 1. npm install
+ 2. npm run start
