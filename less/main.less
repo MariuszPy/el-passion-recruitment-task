@@ -1,0 +1,167 @@
+@granat: #101022;
+@szarik-light: #f6f6f6;
+@szarik: #ccc;
+@szarik-border: #e0e0e0;
+@snow: #fff;
+@dates: #a7a6af;
+@active: #292a48;
+@issue-title: #080606;
+@nav-hover: #494991;
+@quanti: #8a899f;
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto';
+@import 'https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300';
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 18px;
+}
+::-webkit-scrollbar-thumb {
+    height: 6px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+    -webkit-border-radius: 7px;
+    background-color: rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: inset -1px -1px 0px rgba(0, 0, 0, 0.05), inset 1px 1px 0px rgba(0, 0, 0, 0.05);
+}
+::-webkit-scrollbar-button {
+    width: 0;
+    height: 0;
+    display: none;
+}
+::-webkit-scrollbar-corner {
+    background-color: transparent;
+}
+
+#content, #wrapper, html {
+    height: 100%;
+    overflow: hidden;
+    border-radius: 9px;
+}
+
+body {
+    &:extend(#content);
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    -webkit-app-region: drag;
+}
+
+#left {
+    float: left;
+    width: 150px;
+    background: @granat;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    opacity: .9;
+}
+
+#right {
+    float: left;
+    width: 500px;
+    background: @szarik-light;
+    height: 515px;
+    overflow: scroll;
+
+    .right-wrap {
+        margin-left: 15px;
+    }
+}
+
+.day {
+    p {
+        color: @dates;
+        font-size: 12px;
+        line-height: 6px;
+        font-weight: 300;
+    }
+}
+
+.issue {
+    width: 464px;
+    height: 40px;
+    background: @snow;
+    border-radius: 4px;
+    border: 1px solid @szarik-border;
+    margin-bottom: 5px;
+
+    span:first-child {
+        margin: 10px 0 0 11px;
+        display: inline-block;
+        color: @issue-title;
+        font-size: 15px;
+    }
+
+    span:last-child {
+        margin: 10px 11px 0 0;
+        float: right;
+        cursor: pointer;
+        width: 17px;
+        height: 17px;
+    }
+
+    .on {
+        background: url("../assets/icon-star-on.png") no-repeat 50% 50%;
+    }
+
+    .off {
+        background: url("../assets/icon-star-off.png") no-repeat 50% 50%;
+    }
+
+}
+
+.navi {
+    margin-top:39px;
+    color: @snow;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.navi-element-wrapper {
+    height: 50px;
+    cursor: pointer;
+
+    &.active {
+        background-color:@active;
+    }
+
+    &:hover {
+        background-color: @nav-hover;
+    }
+
+    .navi-element {
+
+        padding-top: 17px;
+
+
+        .navi-icon  {
+            width: 42px;
+            height: 20px;
+            float: left;
+
+            &.all {
+                background: url("../assets/icon-github.svg") no-repeat 60% 14%;
+            }
+
+            &.open {
+                background: url("../assets/icon-open-issue.svg") no-repeat 60% 14%;
+            }
+
+            &.closed {
+                background: url("../assets/icon-closed-issue.svg") no-repeat 60% 14%;
+            }
+        }
+
+        .navi-caption {
+            float: left;
+        }
+
+        .navi-quantity {
+            float: right;
+            margin-right:15px;
+            color: @quanti;
+            font-size: 13px;
+        }
+    }
+}
