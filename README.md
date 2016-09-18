@@ -5,4 +5,4 @@
  
  2. To check code and run in debug mode:
 <pre>npm install</pre>
-<pre>run <pre>npm run go</pre>
+<pre>npm run go</pre>
