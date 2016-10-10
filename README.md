@@ -1,4 +1,4 @@
-# EL Passion recruitment task
+# Native macOS app in React
 Desktop app built in Electron, HTML5, CSS and React.js. Works on MacOS.
 
 <h1>Usage</h1>
